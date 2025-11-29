@@ -38,7 +38,7 @@ const Hero = () => {
             Seu Grande Dia
           </RevealText>
           <br />
-          <span className="text-gradient-warm">
+          <span className="text-black font-bold">
             <RevealText
               mode="letters"
               durationMs={900}
