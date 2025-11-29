@@ -4,19 +4,19 @@ import { Star } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Ana & Pedro",
+      name: "Ana paula & Pedro",
       date: "Casamento - Dezembro 2023",
-      text: "A Raema conseguiu capturar cada emoção do nosso dia de forma única. As fotos ficaram lindas demais! Profissionalismo e sensibilidade em cada clique.",
+      text: "A Carolina conseguiu capturar cada emoção do nosso dia de forma única. As fotos ficaram lindas demais! Profissionalismo e sensibilidade em cada clique.",
       rating: 5,
     },
     {
-      name: "Juliana & Ricardo",
+      name: "Julia & Ricardo",
       date: "Casamento - Outubro 2023",
-      text: "Superou todas as expectativas! A Raema tem um olhar especial que transforma momentos simples em verdadeiras obras de arte. Recomendo demais!",
+      text: "Superou todas as expectativas! A Carolina tem um olhar especial que transforma momentos simples em verdadeiras obras de arte. Recomendo demais!",
       rating: 5,
     },
     {
-      name: "Carla & Bruno",
+      name: "luiza & Bruno",
       date: "Casamento - Agosto 2023",
       text: "Profissional incrível! Nos deixou super à vontade durante todo o dia. As fotos ficaram perfeitas e chegaram antes do prazo. Muito obrigada por eternizar nosso amor!",
       rating: 5,

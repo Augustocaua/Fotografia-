@@ -1,5 +1,3 @@
-import { Heart } from "lucide-react";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -8,18 +6,22 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold">Raema Retratos</span>
+            <span className="text-2xl font-bold">Carolina Fotografias</span>
           </div>
           
-          <div className="flex items-center gap-2 text-sm text-background/80">
-            <span>© {currentYear} Raema Retratos. Feito com</span>
-            <Heart className="w-4 h-4 fill-primary text-primary animate-pulse" />
-            <span>para casais apaixonados</span>
+          <div className="text-sm text-background/80 max-w-3xl text-center md:text-left space-y-1">
+            <p className="font-medium">Sobre esta Página</p>
+            <p>
+              Esta landing page foi desenvolvida pela <span className="font-medium">@ACAUS</span> como parte do nosso portfólio profissional, apresentando a qualidade, o design e a performance que entregamos em projetos de sites e páginas de vendas.
+            </p>
+            <p>
+              Aqui demonstramos nossa expertise em criar soluções digitais modernas, responsivas e focadas em conversão — perfeitas para profissionais e empresas que buscam uma presença online impactante.
+            </p>
           </div>
-
+          
           <div className="flex gap-4">
             <a 
-              href="https://www.instagram.com/raemaretratos" 
+              href="https://www.instagram.com/acausvision/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
@@ -30,7 +32,7 @@ const Footer = () => {
               </svg>
             </a>
             <a 
-              href="https://wa.me/5575982787441" 
+              href="https://wa.me/557182875822" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"

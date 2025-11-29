@@ -1,4 +1,5 @@
 import photographerImage from "@/assets/photographer-portrait.jpg";
+import { Reveal, RevealText } from "@/components/ui/Reveal";
 
 const About = () => {
   return (
@@ -6,25 +7,29 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Image */}
-          <div className="animate-slide-up">
+          <Reveal direction="left" delay={100} durationMs={800} easing="cubic-bezier(0.22, 1, 0.36, 1)">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-2xl opacity-20 blur-2xl" />
               <img
                 src={photographerImage}
-                alt="Raema - Fotógrafa de Casamentos"
+                alt="Carolina - Fotógrafa de Casamentos"
                 className="relative rounded-2xl shadow-elegant w-full object-cover aspect-square"
               />
             </div>
-          </div>
+          </Reveal>
 
           {/* Content */}
-          <div className="space-y-6 animate-slide-up">
+          <Reveal className="space-y-6" direction="right" delay={200} durationMs={900} easing="cubic-bezier(0.22, 1, 0.36, 1)">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Olá, sou a Raema
+                <RevealText mode="words" durationMs={900} easing="cubic-bezier(0.22, 1, 0.36, 1)" staggerStepMs={60}>
+                  Olá, sou a Carolina
+                </RevealText>
               </h2>
               <p className="text-xl text-primary font-medium">
-                Fotógrafa de Casamentos
+                <RevealText mode="letters" durationMs={900} easing="cubic-bezier(0.22, 1, 0.36, 1)" staggerStepMs={35}>
+                  Fotógrafa de Casamentos
+                </RevealText>
               </p>
             </div>
             
@@ -56,7 +61,7 @@ const About = () => {
                 <div className="text-sm text-muted-foreground">Satisfação</div>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

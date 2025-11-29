@@ -3,7 +3,7 @@ import { MessageCircle, Instagram, Mail, MapPin } from "lucide-react";
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5575982787441?text=Olá!%20Gostaria%20de%20agendar%20uma%20conversa", "_blank");
+    window.open("https://wa.me/557182875822?text=Olá!%20Gostaria%20de%20agendar%20uma%20conversa", "_blank");
   };
 
   return (
@@ -24,7 +24,7 @@ const Contact = () => {
                   <h3 className="text-2xl font-bold text-foreground mb-6">Entre em Contato</h3>
                   
                   <a 
-                    href="https://wa.me/5575982787441" 
+                    href="https://wa.me/557182875822" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors group"
@@ -32,12 +32,12 @@ const Contact = () => {
                     <MessageCircle className="w-5 h-5 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
                     <div>
                       <div className="font-medium text-foreground">WhatsApp</div>
-                      <div className="text-sm">(75) 98278-7441</div>
+                      <div className="text-sm">(71) 8287-5822</div>
                     </div>
                   </a>
 
                   <a 
-                    href="https://www.instagram.com/raemaretratos" 
+                    href="https://www.instagram.com/acausvision/" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors group"
@@ -45,7 +45,7 @@ const Contact = () => {
                     <Instagram className="w-5 h-5 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
                     <div>
                       <div className="font-medium text-foreground">Instagram</div>
-                      <div className="text-sm">@raemaretratos</div>
+                      <div className="text-sm">@acausvision</div>
                     </div>
                   </a>
 
@@ -53,7 +53,7 @@ const Contact = () => {
                     <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-medium text-foreground">E-mail</div>
-                      <div className="text-sm">contato@raemaretratos.com</div>
+                      <div className="text-sm">contato@carolinaretratos.com</div>
                     </div>
                   </div>
 

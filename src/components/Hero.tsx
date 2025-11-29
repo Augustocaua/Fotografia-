@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-wedding.jpg";
+import { Reveal, RevealText } from "@/components/ui/Reveal";
 
 const Hero = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5575982787441?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20fotografia%20de%20casamento", "_blank");
+    window.open("https://wa.me/557182875822?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20fotografia%20de%20casamento", "_blank");
   };
 
   return (
@@ -20,10 +21,33 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in">
+      <Reveal
+      className="relative z-10 container mx-auto px-4 py-20 text-center"
+      direction="up"
+      delay={100}
+      durationMs={900}
+      easing="cubic-bezier(0.22, 1, 0.36, 1)"
+      >
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-background mb-6 leading-tight">
-          Seu Grande Dia<br />
-          <span className="text-gradient-warm">Eternizado</span>
+          <RevealText
+            mode="words"
+            durationMs={900}
+            easing="cubic-bezier(0.22, 1, 0.36, 1)"
+            staggerStepMs={60}
+          >
+            Seu Grande Dia
+          </RevealText>
+          <br />
+          <span className="text-gradient-warm">
+            <RevealText
+              mode="letters"
+              durationMs={900}
+              easing="cubic-bezier(0.22, 1, 0.36, 1)"
+              staggerStepMs={35}
+            >
+              Eternizado
+            </RevealText>
+          </span>
         </h1>
         <p className="text-xl md:text-2xl text-background/90 mb-8 max-w-2xl mx-auto font-light">
           Registros inesquecíveis que contam a história do seu amor com sensibilidade e arte
@@ -45,7 +69,7 @@ const Hero = () => {
             Ver Portfolio
           </Button>
         </div>
-      </div>
+      </Reveal>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
