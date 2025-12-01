@@ -47,20 +47,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-6">
-              <div className="text-center p-4 bg-card rounded-lg">
-                <div className="text-3xl font-bold text-primary mb-1">150+</div>
-                <div className="text-sm text-muted-foreground">Casamentos</div>
-              </div>
-              <div className="text-center p-4 bg-card rounded-lg">
-                <div className="text-3xl font-bold text-primary mb-1">5+</div>
-                <div className="text-sm text-muted-foreground">Anos</div>
-              </div>
-              <div className="text-center p-4 bg-card rounded-lg">
-                <div className="text-3xl font-bold text-primary mb-1">100%</div>
-                <div className="text-sm text-muted-foreground">Satisfação</div>
-              </div>
-            </div>
+
           </Reveal>
         </div>
       </div>
